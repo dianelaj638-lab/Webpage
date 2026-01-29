@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Favorite Outfit Ideas</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #cce7ff; /* skyblue */
+            color: #4b3832; /* text color */
+        }
+
+        /* Container Grid */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffdde1; /* baby pink */
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 15px;
+            border: 2px dashed #f5e1d0;
+        }
+
+        header h1 {
+            font-family: 'Edwardian Script ITC', cursive;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #d147a3;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #7f5f8f;
+        }
+
+        /* Image Grid */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .image-grid .card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 3px solid #ffb6c1;
+        }
+
+        .image-grid .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .image-grid .card-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(255, 223, 238, 0.8);
+            width: 100%;
+            padding: 10px;
+            font-size: 0.9rem;
+            text-align: center;
+            font-weight: bold;
+            color: #4b3832;
+        }
+
+        /* Paragraph Section */
+        .paragraphs {
+            background-color: #ffe4e1; /* beige */
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px dotted #ffb6c1;
+        }
+
+        .paragraphs h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #d147a3;
+        }
+
+        .paragraphs p {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ffdde1; /* baby pink */
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            border: 2px dashed #f5e1d0;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1>My Favorite Outfit Ideas</h1>
+        <p>By Jena Fee L. Dianela</p>
+    </header>
+
+    <!-- Image Grid: 5 images together -->
+    <div class="image-grid">
+        <div class="card">
+            <img src="BAYU1.jpg" alt="Casual Chic">
+            <div class="card-text">Casual chic outfit</div>
+        </div>
+        <div class="card">
+            <img src="BAYU2.jpeg" alt="Sporty Look">
+            <div class="card-text">Sporty comfy style</div>
+        </div>
+        <div class="card">
+            <img src="BAYU3.webp" alt="Evening Glam">
+            <div class="card-text">Evening glam dress</div>
+        </div>
+        <div class="card">
+            <img src="BAYU4.jpeg" alt="Cozy Layers">
+            <div class="card-text">Cozy layered outfit</div>
+        </div>
+        <div class="card">
+            <img src="BAYU5.jpeg" alt="Statement Outfit">
+            <div class="card-text">Statement patterns</div>
+        </div>
+    </div>
+
+    <!-- Paragraph Section -->
+    <div class="paragraphs">
+        <h2>Why outfit makes us more attractive?</h2>
+        <p>1. Outfits highlight our personal style and personality.</p>
+        <p>2. Wearing coordinated colors makes us appear more put together.</p>
+        <p>3. Outfits enhance confidence, which is naturally attractive.</p>
+        <p>4. Well-chosen clothes make a positive first impression.</p>
+        <p>5. Outfits can express creativity and fashion sense.</p>
+        <p>6. Stylish clothes draw attention to features we like.</p>
+        <p>7. Fashionable outfits show care for self-presentation.</p>
+        <p>8. Matching accessories complete a polished look.</p>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Designed with love by Jena Fee L. Dianela 💖 | Outfit ideas & Fashion inspiration
+    </footer>
+
+</div>
+
+</body>
+</html>
